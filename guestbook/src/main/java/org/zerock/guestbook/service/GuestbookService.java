@@ -1,9 +1,12 @@
 package org.zerock.guestbook.service;
 
+import com.querydsl.core.BooleanBuilder;
+import com.querydsl.core.types.dsl.BooleanExpression;
 import org.zerock.guestbook.dto.GuestbookDTO;
 import org.zerock.guestbook.dto.PageRequestDTO;
 import org.zerock.guestbook.dto.PageResultDTO;
 import org.zerock.guestbook.entity.Guestbook;
+import org.zerock.guestbook.entity.QGuestbook;
 
 public interface GuestbookService {
     Long register(GuestbookDTO dto);
@@ -39,4 +42,5 @@ public interface GuestbookService {
     void remove(Long gno);
 
     void modify(GuestbookDTO dto);
+
 }
