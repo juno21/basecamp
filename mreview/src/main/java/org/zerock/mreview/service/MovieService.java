@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+
 public interface MovieService {
 
     Long register(MovieDTO movieDTO);
@@ -71,4 +72,6 @@ public interface MovieService {
 
         return entityMap;
     }
+
+    MovieDTO getMovie(Long mno);
 }
